@@ -1,0 +1,5 @@
+mysql -h localhost -u root -p
+
+create user 'edson-user'@'localhost' identified with mysql_native_password by '123456';
+
+grant all privileges on * . * to 'edson-user'@'localhost';

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: #435165;
+}
+h3 {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #000000;
+}
+
+[type="submit"] {
+    width: 100%;
+    padding: 15px;
+   margin-top: 20px;
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}

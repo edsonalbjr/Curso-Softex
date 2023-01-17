@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Cadastro</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="/style-c.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="Cadastro">
+			<h1>Cadastro</h1>
+			<form action="/home" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+					<input name="username" type="text" placeholder="Usuário" required>
+
+					<label for="email">
+						<i class="fa fa-envelope"></i>
+					</label>
+					<div>
+						<input name="email" type="email" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+					</div>
+
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Senha" id="password" required>
+				<input type="submit" value="Cadastre-se">
+			</form>
+			<a href="/"> <input type="submit" value="Voltar"/> </a>
+		</div>
+	</body>
+</html>

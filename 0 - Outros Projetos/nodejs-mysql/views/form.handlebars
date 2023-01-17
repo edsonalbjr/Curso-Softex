@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+</head>
+<body>
+    
+    <div>
+    <h1>Cadastro de Pessoas</h1>
+    <h3>Complete suas informações</h3>
+    </div>
+
+    <form action="/form-done" method="post">
+        <p>
+            <div>
+                <label for="nome">Nome Completo</label>
+                <input name="nome" type="text" id="nome"  placeholder="Digite o seu nome completo" pattern="[a-zA-Z\s]+$" required>
+            </div>
+        </p>
+        
+        <p>
+            <label>C.P.F.:</label>
+            <input name="cpf" type="text" placeholder="Digite o seu CPF" maxlength="11" pattern="[0-9]+$"  required>
+        </p>
+    
+        <p>
+            <div>
+                <label for="email">E-mail</label>
+                <input name="email" type="email" id="email" placeholder="Digite o seu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+        </p>
+    
+        <p>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input name="telefone" type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+            </div>
+        </p>
+    
+        <p>
+            <label>Data de Nasc.:</label>
+            <input name="data" type="date" id="date" required>
+        </p>
+    
+        <p>
+        <label for="genero">Gênero:</label>
+        <select name="genero" id="genero" required>
+          <option value=""></option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outros">Outros</option>
+        </select>
+        </p>
+    
+        <p>
+            <input value="Cadastrar" type="submit">
+        </p>
+        </form>
+
+</body>
+</html>
